@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block body %}
+<section class="carousel">
+  <div class="carousel__container">
+    
+    <center style="margin-bottom: 50px; font-size: 20px;">Category</center>
+
+    {% for data in obj %}
+    <div class="carousel-item">
+     <a href="/productview/{{data.id}}"> <img class="carousel-item__img" src="{{data.product_image.url}}"> </a>
+      <div class="panel1">
+        <a href="#" class="far fa-bookmark"></a>
+      </div>
+      <div class="panel2">
+        <a href="#" class="far fa-thumbs-up"></a>
+      </div>
+      <div class="info">
+        <br><br>
+        <div >
+          <b> {{data.product_name}} </b>
+        </div >
+        <br>
+        <p >Product Code: {{data.product_code}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

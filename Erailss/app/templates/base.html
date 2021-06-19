@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>{% block title %} This is Base {% endblock %}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+<link href="{% static 'layout/styles/style.css' %}" rel="stylesheet" type="text/css" media="all">
+<link href="{% static 'layout/styles/style2.css' %}" rel="stylesheet" type="text/css" media="all">
+
+
+</head>
+<body id="top">
+
+  <header >
+    
+    <div class="header-1">
+    
+      <a href="index.html"><img style="width: 50%;" src="{% static 'images/logo_2.png' %}" /></a></li>
+    
+        <div class="form-container">
+            <form action="">
+                <input type="search" placeholder="search products" id="search" /> 
+                <label for="search" class="fas fa-search"></label>
+            </form>
+        </div>
+    
+    </div>
+    
+    <div class="header-2">
+    
+        <div id="menu" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#arrival">arrival</a></li>
+                <li><a href="#featured">featured</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#deal">deal</a></li>
+            </ul>
+        </nav>
+    
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    
+    </div>
+    
+    </header>
+    
+    
+
+
+  {% block body %}
+  
+  
+{% endblock %}
+
+<script src="{% static 'layout/script.js' %}"></script>
+</body>
+</html>
