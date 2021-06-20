@@ -29,7 +29,7 @@
 	transition: 450ms all;
 	transform-origin: center left;
 	position: relative;
-	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.26);
+	box-shadow: 0 5px 5px 0 rgba(69, 201, 241, 0.26);
 }
 .carousel-item .panel1
 {
